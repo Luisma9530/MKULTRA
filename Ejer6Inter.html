@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Base de datos</title>
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Luis Manuel" />
+    <meta name="description" content="Base de datos" />
+    <meta name="keywords" content="base,datos" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio6.css" />
+
+</head>
+
+<body>
+    <h1>Base de datos</h1>
+
+    <main>
+        <h2>Operaciones de creación</h2>
+        <form action='#' method='post'>
+            <p><input type='submit' value='Crear la base de datos' name='crearBase' /></p>
+            <p><input type='submit' value='Crear una tabla' name='crearTabla' /></p>
+        </form>
+
+        <h2>Insertar en la tablas</h2>
+        <form>
+            <p><label>DNI: </label> <input type='text' name='dni' required></p>
+            <p><label>Nombre: </label><input type='text' name='nombre' required></p>
+            <p><label>Apellidos: </label><input type='text' name='apellidos' required></p>
+            <p><label>Email: </label><input type='text' name='email' required></p>
+            <p><label>Telefono: </label><input type='text' name='telefono' required></p>
+            <p><label>Edad: </label><input type='number' min='0' step='1' name='edad' required></p>
+            <fieldset>
+                <legend>Sexo: </legend>
+                <p><label>Masculino</label><input type=radio value='m' name='sexo' checked></p>
+                <p><label>Femenino</label><input type=radio value='f' name='sexo'></p>
+            </fieldset>
+            <p><label>Nivel informático: </label><input type='text' name='nivel' required></p>
+            <p><label>Tiempo: </label><input type='number' min='0' name='tiempo' required></p>
+            <fieldset>
+                <legend>Completada: </legend>
+                <p><label>Sí</label><input type=radio value='si' name='completada'></p>
+                <p><label>No</label><input type=radio value='no' name='completada' checked></p>
+            </fieldset>
+            <p><label>Comentarios: </label><input type='text' name='comentarios' required></p>
+            <p><label>Propuestas: </label><input type='text' name='propuestas' required></p>
+            <p><label>Valoración: </label><input type='number' min='0' max='10' name='valoracion' required></p>
+            <input type='submit' value='Insertar datos' name='insertar' />
+        </form>
+
+        <h2>Modificar en la tabla</h2>
+        <form>
+            <p><label>DNI: </label> <input type='text' name='dni' required></p>
+            <p><label>Nombre: </label><input type='text' name='nombre' required></p>
+            <p><label>Apellidos: </label><input type='text' name='apellidos' required></p>
+            <p><label>Email: </label><input type='text' name='email' required></p>
+            <p><label>Telefono: </label><input type='text' name='telefono' required></p>
+            <p><label>Edad: </label><input type='number' min='0' step='1' name='edad' required></p>
+            <fieldset>
+                <legend>Sexo: </legend>
+                <p><label>Masculino</label><input type=radio value='m' name='sexo' checked></p>
+                <p><label>Femenino</label><input type=radio value='f' name='sexo'></p>
+            </fieldset>
+            <p><label>Nivel informático: </label><input type='text' name='nivel' required></p>
+            <p><label>Tiempo: </label><input type='number' min='0' name='tiempo' required></p>
+            <fieldset>
+                <legend>Completada: </legend>
+                <p><label>Sí</label><input type=radio value='si' name='completada'></p>
+                <p><label>No</label><input type=radio value='no' name='completada' checked></p>
+            </fieldset>
+            <p><label>Comentarios: </label><input type='text' name='comentarios' required></p>
+            <p><label>Propuestas: </label><input type='text' name='propuestas' required></p>
+            <p><label>Valoración: </label><input type='number' min='0' max='10' name='valoracion' required></p>
+            <input type='submit' value='Modificar datos' name='modificar' />
+        </form>
+
+        <h2>Buscar en la tabla</h2>
+        <form action='#' method='post'>
+            <p><label>DNI: </label><input type='text' name='dni' required></p>
+            <p><input type='submit' value='Buscar datos' name='buscar' /></p>
+        </form>
+
+        <h2>Eliminar en la tabla</h2>
+        <form action='#' method='post'>
+            <label>DNI: </label><input type='text' name='dni' required>
+            <input type='submit' value='Eliminar datos' name='eliminar' />
+        </form>
+
+        <h2>Generar informe</h2>
+        <form action='#' method='post'>
+            <input type='submit' value='Generar informe' name='informe' />
+        </form>
+
+        <h2>CSV</h2>
+        <form>
+            <p><label for='file'>Introduzca CSV</label></p>
+            <p><input type='file' id='file' name='file' /></p>
+            <p><input type='submit' value='Cargar CSV' name='cargarCSV' /></p>
+            <p><input type='submit' value='Exportar a CSV' name='exportar' /></p>
+        </form>
+    </main>
+</body>
+
+</html>
