@@ -32,65 +32,77 @@
 
         <h2>Insertar en la tablas</h2>
         <form>
-            <p><label>DNI: </label> <input type='text' name='dni' required></p>
-            <p><label>Nombre: </label><input type='text' name='nombre' required></p>
-            <p><label>Apellidos: </label><input type='text' name='apellidos' required></p>
-            <p><label>Email: </label><input type='text' name='email' required></p>
-            <p><label>Telefono: </label><input type='text' name='telefono' required></p>
-            <p><label>Edad: </label><input type='number' min='0' step='1' name='edad' required></p>
+            <p><label for='dni1'>DNI: </label> <input type='text' id='dni1' name='dni' required></p>
+            <p><label for='nombre1'>Nombre: </label><input type='text' id='nombre1' name='nombre' required></p>
+            <p><label for='apellidos1'>Apellidos: </label><input type='text' id='apellidos1' name='apellidos' required>
+            </p>
+            <p><label for='email1'>Email: </label><input type='text' id='email1' name='email' required></p>
+            <p><label for='telefono1'>Telefono: </label><input type='text' id='telefono1' name='telefono' required></p>
+            <p><label for='edad1'>Edad: </label><input type='number' min='0' step='1' id='edad1' name='edad' required>
+            </p>
             <fieldset>
                 <legend>Sexo: </legend>
-                <p><label>Masculino</label><input type=radio value='m' name='sexo' checked></p>
-                <p><label>Femenino</label><input type=radio value='f' name='sexo'></p>
+                <p><label for='sexo1'>Masculino</label><input type=radio value='m' id='sexo1' name='sexo' checked></p>
+                <p><label for='sexo2'>Femenino</label><input type=radio value='f' id='sexo2' name='sexo'></p>
             </fieldset>
-            <p><label>Nivel informático: </label><input type='text' name='nivel' required></p>
-            <p><label>Tiempo: </label><input type='number' min='0' name='tiempo' required></p>
+            <p><label for='nivel1'>Nivel informático: </label><input type='text' id='nivel1' name='nivel' required></p>
+            <p><label for='tiempo1'>Tiempo: </label><input type='number' min='0' id='tiempo1' name='tiempo' required>
+            </p>
             <fieldset>
                 <legend>Completada: </legend>
-                <p><label>Sí</label><input type=radio value='si' name='completada'></p>
-                <p><label>No</label><input type=radio value='no' name='completada' checked></p>
+                <p><label for='si1'>Sí</label><input type=radio value='si' id='si1' name='completada'></p>
+                <p><label for='no1'>No</label><input type=radio value='no' id='no1' name='completada' checked></p>
             </fieldset>
-            <p><label>Comentarios: </label><input type='text' name='comentarios' required></p>
-            <p><label>Propuestas: </label><input type='text' name='propuestas' required></p>
-            <p><label>Valoración: </label><input type='number' min='0' max='10' name='valoracion' required></p>
+            <p><label for='comentario1'>Comentarios: </label><input type='text' id='comentario1' name='comentarios'
+                    required></p>
+            <p><label for='propuestas1'>Propuestas: </label><input type='text' id='propuestas1' name='propuestas'
+                    required></p>
+            <p><label for='valoracion1'>Valoración: </label><input type='number' min='0' max='10' id='valoracion1'
+                    name='valoracion' required></p>
             <input type='submit' value='Insertar datos' name='insertar' />
         </form>
 
         <h2>Modificar en la tabla</h2>
         <form>
-            <p><label>DNI: </label> <input type='text' name='dni' required></p>
-            <p><label>Nombre: </label><input type='text' name='nombre' required></p>
-            <p><label>Apellidos: </label><input type='text' name='apellidos' required></p>
-            <p><label>Email: </label><input type='text' name='email' required></p>
-            <p><label>Telefono: </label><input type='text' name='telefono' required></p>
-            <p><label>Edad: </label><input type='number' min='0' step='1' name='edad' required></p>
+            <p><label for='dni2'>DNI: </label> <input type='text' id='dni2' name='dni' required></p>
+            <p><label for='nombre2'>Nombre: </label><input type='text' id='nombre2' name='nombre' required></p>
+            <p><label for='apellidos2'>Apellidos: </label><input type='text' id='apellidos2' name='apellidos' required>
+            </p>
+            <p><label for='email2'>Email: </label><input type='text' id='email2' name='email' required></p>
+            <p><label for='telefono2'>Telefono: </label><input type='text' id='telefono2' name='telefono' required></p>
+            <p><label for='edad2'>Edad: </label><input type='number' min='0' step='2' id='edad2' name='edad' required>
+            </p>
             <fieldset>
                 <legend>Sexo: </legend>
-                <p><label>Masculino</label><input type=radio value='m' name='sexo' checked></p>
-                <p><label>Femenino</label><input type=radio value='f' name='sexo'></p>
+                <p><label for='sexo3'>Masculino</label><input type=radio value='m' id='sexo3' name='sexo' checked></p>
+                <p><label for='sexo4'>Femenino</label><input type=radio value='f' id='sexo4' name='sexo'></p>
             </fieldset>
-            <p><label>Nivel informático: </label><input type='text' name='nivel' required></p>
-            <p><label>Tiempo: </label><input type='number' min='0' name='tiempo' required></p>
+            <p><label for='nivel2'>Nivel informático: </label><input type='text' id='nivel2' name='nivel' required></p>
+            <p><label for='tiempo2'>Tiempo: </label><input type='number' min='0' id='tiempo2' name='tiempo' required>
+            </p>
             <fieldset>
                 <legend>Completada: </legend>
-                <p><label>Sí</label><input type=radio value='si' name='completada'></p>
-                <p><label>No</label><input type=radio value='no' name='completada' checked></p>
+                <p><label for='si2'>Sí</label><input type=radio value='si' id='si2' name='completada'></p>
+                <p><label for='no2'>No</label><input type=radio value='no' id='no2' name='completada' checked></p>
             </fieldset>
-            <p><label>Comentarios: </label><input type='text' name='comentarios' required></p>
-            <p><label>Propuestas: </label><input type='text' name='propuestas' required></p>
-            <p><label>Valoración: </label><input type='number' min='0' max='10' name='valoracion' required></p>
+            <p><label for='comentario2'>Comentarios: </label><input type='text' id='comentario2' name='comentarios'
+                    required></p>
+            <p><label for='propuestas2'>Propuestas: </label><input type='text' id='propuestas2' name='propuestas'
+                    required></p>
+            <p><label for='valoracion2'>Valoración: </label><input type='number' min='0' max='10' id='valoracion2'
+                    name='valoracion' required></p>
             <input type='submit' value='Modificar datos' name='modificar' />
         </form>
 
         <h2>Buscar en la tabla</h2>
         <form action='#' method='post'>
-            <p><label>DNI: </label><input type='text' name='dni' required></p>
+            <p><label for='dniBuscar'>DNI: </label><input type='text' id='dniBuscar' name='dni' required></p>
             <p><input type='submit' value='Buscar datos' name='buscar' /></p>
         </form>
 
         <h2>Eliminar en la tabla</h2>
         <form action='#' method='post'>
-            <label>DNI: </label><input type='text' name='dni' required>
+            <label for='dniEliminar'>DNI: </label><input type='text' id='dniEliminar' name='dni' required>
             <input type='submit' value='Eliminar datos' name='eliminar' />
         </form>
 
