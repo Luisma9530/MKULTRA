@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Base de datos</title>
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Luis Manuel">
+    <meta name="description" content="Base de datos">
+    <meta name="keywords" content="base,datos">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+
+</head>
+
+<body>
+    <h1>Base de datos</h1>
+
+    <main>
+        <h2>Operaciones de creación</h2>
+        <form action="#" method="post">
+            <p><input type="submit" value="Crear la base de datos" name="crearBase"></p>
+            <p><input type="submit" value="Crear tablas" name="crearTablas"></p>
+            <p><input type="submit" value="Insertar datos de ejemplo" name="datosEjemplo"></p>
+        </form>
+        <p>
+            Se ha realizado la conexion con la base de datos        </p>
+        <h2>Añadir libro</h2>
+        <form action="#" method="post">
+            <p><label for="nombreLibro">Nombre del libro: </label><input type="text" id="nombreLibro" name="nombreLibro" required=""></p>
+            <p><label for="paginas">Páginas: </label><input type="number" min="0" step="1" id="paginas" name="paginas" required="">
+            </p><p><label for="IDGenero">ID del genero del libro: </label><input type="text" id="IDGenero" name="IDGenero" required=""></p>
+            <p><label for="IDEstanteria">ID de la estanteria del libro: </label><input type="text" id="IDEstanteria" name="IDEstanteria" required=""></p>
+            <input type="submit" value="Añadir libro" name="insertarLibro">
+        </form>
+        <p>
+            No existe el genero de libro introducido        </p>
+        <h2>Añadir socio</h2>
+        <form action="#" method="post">
+            <p><label for="nombreSocio">Nombre: </label><input type="text" id="nombreSocio" name="nombreSocio" required="">
+            </p>
+            <p><label for="apellidosSocio">Apellidos: </label><input type="text" id="apellidosSocio" name="apellidosSocio" required=""></p>
+            <input type="submit" value="Añadir socio" name="insertarSocio">
+        </form>
+        <p>
+            Socio cargado        </p>
+        <h2>Buscar libro</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="busqueda">Busqueda: </label><input type="text" id="busqueda" name="busqueda" required="">
+            </p>
+            <input type="submit" value="Buscar libro por ID" name="buscarPorID">
+            <input type="submit" value="Buscar libro por Nombre" name="buscarPorNombre">
+        </form>
+        <p>
+            </p><section><h2>Libro encontado por ID</h2><p>ID: L1</p><p>Nombre: El Señor de los Anillos</p><p>Páginas: 566</p><p>Genero: Aventura</p><p>Estantería: E1</p></section>        <p></p>
+        <h2>Reserva</h2>
+        <form action="#" method="post">
+            <p><label for="fechaReserva">Hasta cuando quieres reservar: </label><input type="date" id="fechaReserva" name="fechaReserva" min="2022-12-15" required="">
+            </p>
+            <p><label for="idSocio">ID del socio: </label><input type="text" id="idSocio" name="idSocio" required=""></p>
+            <p><label for="idLibro">ID del Libro: </label><input type="text" id="idLibro" name="idLibro" required=""></p>
+            <input type="submit" value="Hacer reserva" name="hacerReserva">
+        </form>
+        <p>
+            El ID del socio introducido no existe        </p>
+        <h2>Actualizar fin de la reserva</h2>
+        <form action="#" method="post">
+            <p><label for="idReserva">ID de la reserva: </label><input type="text" id="idReserva" name="idReserva" required=""></p>
+            <p><label for="fechaFinReserva">Hasta cuando quieres reservar: </label><input type="date" id="fechaFinReserva" name="fechaFinReserva" min="2022-12-15" required="">
+            </p>
+            <input type="submit" value="Cambiar fecha de fin de reserva" name="actualizarFinReserva">
+        </form>
+        <p>
+            Se ha actuaizado la fecha de fin de reserva        </p>
+    </main>
+
+
+</body></html>
