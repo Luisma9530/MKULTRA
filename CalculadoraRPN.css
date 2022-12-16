@@ -4,7 +4,7 @@ Descripción de estilos
 ****************************/
 
 /*Specificity: (0,0,1)*/
-main form {
+main{
     display: grid;
     grid-template-columns: repeat(4, 2.5em);
     grid-template-rows: repeat(9, 1em);
@@ -20,7 +20,7 @@ body {
 }
 
 /*Specificity: (0,1,1)*/
-input[type=submit]{
+input[type=button]{
     margin: 0.3em;
     border-color: whitesmoke;
 }
